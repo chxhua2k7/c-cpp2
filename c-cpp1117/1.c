@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
+// #include <conio.h>
+#include <ncurses.h>
 #include <ctype.h>
 
 int main(int argc, char *argv[]) {
@@ -32,7 +33,7 @@ int main(int argc, char *argv[]) {
         }
         while (1);
         printf("是否（Y/n）繼續：");
-        chose = tolower(getche());
+        chose = tolower(getchar());
         printf("\n");
     }
     while (chose == 'y');
